@@ -1,0 +1,298 @@
+*{
+   box-sizing: border-box;
+}
+
+body{
+    background-color: #efdcdc;
+    margin: 0;
+    padding: 0;
+    height: 120vh;
+}
+.Choix_evenement,.selection_billets,.ajout_participants{
+    display: none;
+}
+
+main{
+    height: 100vh;
+    width: 100vw;
+     display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+.bg_photo{
+    background-image:url(/assets/images/camping.jpg);
+    position: relative;
+    border:2px #000000 solid;
+    border-radius: 10px;
+    /* top: 100px; */
+    width: 70%;
+    height: 30%;
+}
+   
+.bg_photo > div{
+   
+    position: absolute;
+    bottom: -77px;
+    width: 100%; 
+    height: 92%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.leftside , .rightside{
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    height: 40px;
+    width: 45%;
+    align-items: center;
+    gap: 16px;
+}
+.leftside >.holder_variant , .rightside > .holder{
+    height: 27px;
+    width: 93%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 11px;
+    
+    /* display: block; */
+}
+
+
+
+.leftside >.holder_variant > i ,i{
+    font-size: medium;
+   margin-left: 5px;
+  
+}
+.assemble{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 60px;
+    width: 90%;
+}
+
+.image >img{
+    height: 500Px;
+    width: 500px;
+    border-radius: 10px;
+}
+.info{
+    
+    width:  27%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    row-gap: 10px;
+}
+.holder_section2{
+     height: 27px;
+    width: 60%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+    padding-left: 10px;
+}
+.plus,.minus{
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    background-color: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.euro_ticket{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    width: 60%;
+}
+.count{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 20px;
+    text-align: center;
+    
+}
+
+.nummer{
+     height: 27px;
+     width: 110px;
+    border-radius: 10px;
+    background-color: #ffffff;
+    color: #000000;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.navigation_button{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+}
+.button{
+    height: 25px;
+    width: 90px;
+    padding: 5px 17px;
+    border-radius: 6px;
+    color: #000000;
+    background-color: #ffffff;
+    margin: 30px;
+}
+.button_variant,.oftotal{
+    height: 25px;
+    width: 90px;
+    padding: 5px 17px;
+    border-radius: 6px;
+    color: #000;
+    background-color: #C2B1B1;
+    position: absolute;
+    /* margin: 30px; */
+}
+.oftotal{
+    top: -10Px;
+    left: 100%;
+}
+.button_variant{
+    top: 102%;
+    left: 100%;
+}
+.form{
+    position: relative;
+    right: 60px;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+     border: 2px #bf2424 solid;
+    background-color: #efdcdc;
+    height: 500px;
+    width: 400px;
+    padding: 20px;
+}
+.form input{
+    height: 30px;
+    width: 230px;
+    border-radius: 10px;
+    margin: 0;
+}
+.middle{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 40%;
+    border: 2px #000 solid;
+    padding: 20px;
+    gap: 100px;
+}
+.listage{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    
+}
+
+.upperleft,.upperright{
+    display: flex;
+    align-items: center;
+    gap: 10px;
+}
+.second,.first{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 10px;
+}
+.diff{
+    align-self: flex-start;
+}
+.group{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    width: 361px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 25px;
+}
+.recapulatif_confirmation{
+    height: 551px;
+}
+.recapulatif{
+    display: flex;
+    flex-direction: column;
+    gap: 130px;
+    width: 100%;
+    height: 100%;
+}
+.group-deux{
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* justify-content: flex-start; */
+    gap: 10px;
+    width: 361px;
+    height: 100px;
+    border-radius: 20px;
+    background-color: #ffffff;
+    color: #000;
+    padding: 15px 25px;
+}
+.group-deux > div{
+    display: flex;
+    
+    align-items: center;
+    gap: 10px;
+}
+.photo{
+    background-image: url(/assets/images/sculpting.webp);
+    background-repeat: no-repeat;
+    background-size:cover;
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+}
+.ensemble{
+    width: 80%;
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+    gap: 20px;
+}
+
+.lower_recapulatif,.upper_recapulatif{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    
+}
+.upper_lower_recapulatif,.lower_lower_recapulatif{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+.upper_lower_recapulatif >div,.lower_lower_recapulatif >div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10px;
+}
