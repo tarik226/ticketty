@@ -15,7 +15,7 @@
   </head>
   <body>
     <section class="Choix_evenement">
-      <header>
+      <header class="select_header">
         <select name="premier_options" id="Genre">
           <i class="fa-solid fa-arrow-down"></i>
           <option value="Genre" selected disabled>Genre</option>
@@ -129,7 +129,68 @@
             </div>
           </div>
         </div>
-      </main>
+        <div class="bg_photo">
+          <div class="main_content">
+            <div class="leftside">
+              <div class="holder_variant">
+                <i class="fa-solid fa-address-card"></i>
+                <p><strong> cesar dupois</strong></p>
+              </div>
+              <div class="holder_variant">
+                <i class="fa-solid fa-calendar"></i>
+                <p><strong>2/6/2019 -- 3:00</strong></p>
+              </div>
+            </div>
+            <div class="rightside">
+              <div class="holder">
+                <i class="fa-solid fa-location-dot"></i>
+                <p><strong>new hall , cali</strong></p>
+              </div>
+              <div class="holder">
+                <i class="fa-solid fa-ticket"></i>
+                <p><strong> 3</strong></p>
+              </div>
+              <div class="holder">
+                <!-- <i class="fa-solid fa-circle-euro"></i> -->
+                <i class="fa-solid fa-location-dot"></i>
+                <p><strong> 73</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="bg_photo">
+          <div class="main_content">
+            <div class="leftside">
+              <div class="holder_variant">
+                <i class="fa-solid fa-address-card"></i>
+                <p><strong> cesar dupois</strong></p>
+              </div>
+              <div class="holder_variant">
+                <i class="fa-solid fa-calendar"></i>
+                <p><strong>2/6/2019 -- 3:00</strong></p>
+              </div>
+            </div>
+            <div class="rightside">
+              <div class="holder">
+                <i class="fa-solid fa-location-dot"></i>
+                <p><strong>new hall , cali</strong></p>
+              </div>
+              <div class="holder">
+                <i class="fa-solid fa-ticket"></i>
+                <p><strong> 3</strong></p>
+              </div>
+              <div class="holder">
+                <!-- <i class="fa-solid fa-circle-euro"></i> -->
+                <i class="fa-solid fa-location-dot"></i>
+                <p><strong> 73</strong></p>
+              </div>
+            </div>
+          </div>
+        </div>
+        
+      </main><div class="navigation_button">
+          <div class="button first_page_button">suivant</div>
+        </div>
     </section>
 
     <section class="selection_billets">
@@ -168,13 +229,13 @@
         </div>
       </div>
       <div class="navigation_button">
-        <div class="button">precedent</div>
-        <div class="button">suivant</div>
+        <div class="button" id="precedent_deux">precedent</div>
+        <div class="button" id="suivant_deux">suivant</div>
       </div>
     </section>
     <section class="ajout_participants">
       <div class="middle">
-        <div class="form">
+        <form class="form" >
           <div>
             <p>Nom</p>
             <input type="text" class="nomform" />
@@ -191,68 +252,17 @@
             <p>Telephone</p>
             <input type="tel" class="telform" />
           </div>
-          <div class="oftotal">1/3</div>
-          <div class="button_variant">suivant</div>
-        </div>
+          <div class="oftotal"></div>
+          <button class="button_variant formsubmitbutton" type="submit" >suivant</button>
+        </form>
 
         <div class="listage">
-          <div class="group">
-            <div class="first">
-              <div class="upperleft">
-                <div><i class="fa-solid fa-envelope"></i></div>
-                <div>Richard Wilson</div>
-              </div>
-              <div class="upperright">
-                <div><i class="fa-solid fa-envelope"></i></div>
-                <div>richard@gmail.com</div>
-              </div>
-            </div>
-            <div class="second diff">
-              <div><i class="fa-solid fa-phone"></i></div>
-              <div>+000 123567</div>
-            </div>
-          </div>
-          <div class="group">
-            <div class="listage">
-              <div class="first">
-                <div class="upperleft">
-                  <div><i class="fa-solid fa-envelope"></i></div>
-                  <div>Richard Wilson</div>
-                </div>
-                <div class="upperright">
-                  <div><i class="fa-solid fa-envelope"></i></div>
-                  <div>richard@gmail.com</div>
-                </div>
-              </div>
-              <div class="second">
-                <div><i class="fa-solid fa-phone"></i></div>
-                <div>+000 123567</div>
-              </div>
-            </div>
-          </div>
-          <div class="group">
-            <div class="listage">
-              <div class="first">
-                <div class="upperleft">
-                  <div><i class="fa-solid fa-envelope"></i></div>
-                  <div>Richard Wilson</div>
-                </div>
-                <div class="upperright">
-                  <div><i class="fa-solid fa-envelope"></i></div>
-                  <div>richard@gmail.com</div>
-                </div>
-              </div>
-              <div class="second">
-                <div><i class="fa-solid fa-phone"></i></div>
-                <div>+000 123567</div>
-              </div>
-            </div>
-          </div>
+          
         </div>
       </div>
       <div class="navigation_button">
-        <div class="button">Precedent</div>
-        <div class="button">Suivant</div>
+        <div class="button buttonto3page " type="submit">Precedent</div>
+        <div class="button buttonto4page ">Suivant</div>
       </div>
     </section>
     <section class="recapulatif_confirmation">
@@ -326,6 +336,15 @@
             </div>
           </div>
         </div>
+      </div>
+      <div class="navigation_button">
+        <div class="button buttontoprevious">Precedent</div>
+        <div class="button confirm"><a href="#popup">Confirm</a> <i class="fa-solid fa-check"></i></div>
+      </div>
+      <div class="popup" id="popup">
+        <h1>Choix Confirmé</h1>
+        &#x1F973;
+        <a href="#">X</a>
       </div>
     </section>
     <script src="interactif.js"></script>

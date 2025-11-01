@@ -1,6 +1,13 @@
 *{
    box-sizing: border-box;
 }
+.error{
+    color: red;
+    font-size: 0.7em;
+}
+.error::before{
+    content: '&#9888;';
+}
 
 body{
     background-color: #efdcdc;
@@ -8,17 +15,32 @@ body{
     padding: 0;
     height: 120vh;
 }
-.Choix_evenement,.selection_billets,.ajout_participants{
+.selection_billets,.ajout_participants,.recapulatif_confirmation{
     display: none;
 }
-
+.select_header{
+    width: 100%;
+}
+.select_header select{
+    width: 30%;
+}
+.Choix_evenement main{
+    display: flex;
+    flex-direction: row;
+    gap: 20px;
+}
 main{
     height: 100vh;
     width: 100vw;
      display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items: flex-start;
     gap: 20px;
+    flex-wrap: wrap;
+}
+.first_page_button{
+    position: absolute;
+    left: 86%;
 }
 .bg_photo{
     background-image:url(/assets/images/camping.jpg);
@@ -26,8 +48,13 @@ main{
     border:2px #000000 solid;
     border-radius: 10px;
     /* top: 100px; */
-    width: 70%;
+    width: 30%;
     height: 30%;
+}
+@media (min-width:1024px){
+    .Choix_evenement main{
+        flex-direction: column;
+    }
 }
    
 .bg_photo > div{
@@ -178,7 +205,7 @@ main{
     display: flex;
     flex-direction: column;
     gap: 18px;
-     border: 2px #bf2424 solid;
+     /* border: 2px #bf2424 solid; */
     background-color: #efdcdc;
     height: 500px;
     width: 400px;
@@ -235,6 +262,7 @@ main{
 }
 .recapulatif_confirmation{
     height: 551px;
+    width: 90%;
 }
 .recapulatif{
     display: flex;
@@ -273,10 +301,17 @@ main{
 .ensemble{
     width: 80%;
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     height: 100%;
     width: 100%;
     gap: 20px;
+}
+
+@media (max-width:768px) {
+    .ensemble{
+        flex-direction: column;
+    }
 }
 
 .lower_recapulatif,.upper_recapulatif{
@@ -295,4 +330,31 @@ main{
     align-items: center;
     justify-content: space-between;
     gap: 10px;
+}
+.confirm{
+    width: 120px;
+}
+
+.popup{
+    display: none;
+    height: 200px;
+    width: 500px;
+    background: #ffffff;
+    color: #000;
+    /* display: flex; */
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+    position: absolute;
+    right: 29%;
+    top: 50%;
+    border-radius: 15px;
+    /* text-align: center; */
+}
+.popup:target{
+    display: flex;
+}
+ a{
+    text-decoration: none;
+    color: #000;
 }
